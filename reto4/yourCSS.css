@@ -1,0 +1,49 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #19191A
+  Circle:#4F77FF
+  Rectangle:#F9E492
+  Union: #9AD5FF
+*/
+.bg {
+  width: 400px;
+  height: 300px;
+  background-color: #19191a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.bg__content {
+  background-color: #4F77FF;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transform: translateY(-30px);
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.bg__content:before,
+.bg__content:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+}
+
+.bg__content:before {
+  background-color: #9AD5FF;
+  bottom: 0;
+  height: 50%;
+  border-radius: 0 0 0 100%;
+}
+
+.bg__content:after {
+  background-color: #F9E492;
+  height: 85%;
+  top: 50%;
+  z-index: -1;
+}
+

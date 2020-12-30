@@ -1,0 +1,46 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #293462
+  Soap: #FE5F55
+  Shadow: #A64942
+*/
+.bg {
+  width: 400px;
+  height: 300px;
+  background: #293462;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg__content {
+  background-color: #A64942;
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.bg__content:before,
+.bg__content:after {
+  content: '';
+  position: absolute;
+  background-color: #FE5F55;
+  border-radius: 20px;
+} 
+
+.bg__content:after {
+  background-color: #A64942;
+  width: 70%;
+  height: 2.5rem;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(calc(-50% - 20px));
+}
+
+.bg__content:before {
+  width: 100%;
+  height: 100%;
+  top: -20px;
+  left: 0;
+}

@@ -1,0 +1,38 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #293462
+  Background-circle: #FFF1C1
+  Mountains: #FE5F55
+*/
+.bg {
+  width: 400px;
+  height: 300px;
+  background: #293462;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg__content {
+  background-color: #FFF1C1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg__content:before,
+.bg__content:after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #FE5F55;
+  transform: rotate(-45deg) translateY(100px) translateX(-40px);
+}  
+.bg__content:after {
+  transform: rotate(-45deg) translateY(70px) translateX(-165px);
+
+}

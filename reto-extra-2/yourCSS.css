@@ -1,0 +1,62 @@
+/* 
+IMPORTANTE: LO HE CONSEGUIDO CON DOS DIVS, SI LO CONSIGUES CON UNO MÁNDAME LA SOLUCIÓN A DISCORD
+Colors:
+  Background: #6592CF
+  House: #243D83
+  Lights: #EEB850
+*/
+.bg {
+  width: 400px;
+  height: 300px;
+  background: #6592cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg__content {
+  width: 150px;
+  height: 150px;
+  background-color: #243D83;
+  position: relative;
+  top: 1.5rem;
+  border-radius: 50px 50px 8px 8px;
+}
+
+.bg__content:before,
+.bg__content:after {
+  content: '';
+  position: absolute;
+}
+
+.bg__content:before {
+  left: -1.35rem;
+  bottom: 70%;
+  width: 0;
+  height: 0;
+  border: 6rem solid;
+  border-color:transparent transparent  #243D83 transparent;
+}
+
+.bg__content:after {
+  width: 100px;
+  height: .65rem;
+  background-color: #EEB850;
+  bottom: 67%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+}
+
+.bg__details {
+  position: absolute;
+  width: 3.25rem;
+  height: 3.25rem;
+  background-color: #EEB850;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px 10px 0 0 ;
+}
+
+

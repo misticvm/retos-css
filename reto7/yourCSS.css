@@ -1,0 +1,46 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #09042A
+  Left circle: #7B3F61
+  Right circle: #E78481
+*/
+.bg {
+  width: 400px;
+  height: 300px;
+  background-color: #09042a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg__content {
+  width: 150px;
+  height: 150px;
+  background-color: #7B3F61;
+  border-radius: 50%;
+  transform: translateX(-45px);
+  position: relative;
+  overflow: hidden;
+  box-shadow: calc(150px * 60 / 100) 0 #E78481;
+}
+
+/* .bg__content:before,
+.bg__content:after {
+  
+} */
+
+
+.bg__content:before {
+  content: '';
+  position: absolute;
+  background-color: #09042A;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: translateX(60%);
+}
+
+/* .bg__content:after {
+
+} */

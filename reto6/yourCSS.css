@@ -1,0 +1,33 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #5C434C
+  Orange: #F09462
+  Yellow: #F5D6B4
+*/
+.bg {
+  width: 400px;
+  height: 300px;
+  background-color: #5c434c;
+}
+
+.bg__content {
+  width: 5rem;
+  height: 5rem;
+  background-color: #F09462;
+  border-radius: 100% 0 0 0;
+  margin:  1rem;
+  box-shadow: 6rem 0 #F5D6B4,
+              12rem 0 #F09462,
+              18rem 0 #F5D6B4,
+              0 6rem  #F5D6B4,
+              0 12rem #F09462,
+              6rem 6rem  #F09462,
+              12rem 6rem  #F5D6B4,
+              18rem 6rem  #F09462,
+              6rem 12rem #F5D6B4,
+              12rem 12rem  #F09462,
+              18rem 12rem #F5D6B4;
+}
+
+
